@@ -1,8 +1,8 @@
 ﻿<ResourceDictionary
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="clr-namespace:MyTemplate.Demo.Controls"
-    xmlns:shadui="clr-namespace:MyTemplate;assembly=MyTemplate">
+    xmlns:controls="clr-namespace:MyTemplate.App.Controls"
+    xmlns:shadui="clr-namespace:MyTemplate.UI;assembly=MyTemplate.UI">
     <Design.PreviewWith>
         <StackPanel Spacing="32">
             <controls:ControlBlock Title="Basic Tab">

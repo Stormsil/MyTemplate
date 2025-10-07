@@ -2,7 +2,7 @@
 using Avalonia.Data.Converters;
 using Avalonia.Layout;
 
-namespace MyTemplate.Demo.Converters;
+namespace MyTemplate.App.Converters;
 
 public static class BooleanConverters
 {

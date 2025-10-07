@@ -4,7 +4,7 @@ using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace MyTemplate.Demo.ViewModels.Examples.Numeric;
+namespace MyTemplate.App.ViewModels.Examples.Numeric;
 
 public sealed partial class FormNumericViewModel : ViewModelBase
 {

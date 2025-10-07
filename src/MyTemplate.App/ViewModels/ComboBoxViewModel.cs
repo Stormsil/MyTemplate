@@ -2,9 +2,9 @@
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.ComboBox;
+using MyTemplate.App.ViewModels.Examples.ComboBox;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("combobox")]
 public sealed partial class ComboBoxViewModel : ViewModelBase, INavigable

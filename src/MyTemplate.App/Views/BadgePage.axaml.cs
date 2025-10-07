@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace MyTemplate.Demo.Views;
+namespace MyTemplate.App.Views;
 
 public partial class BadgePage : UserControl
 {

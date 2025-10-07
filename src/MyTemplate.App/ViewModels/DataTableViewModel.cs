@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.DataTable;
+using MyTemplate.App.ViewModels.Examples.DataTable;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("data-table")]
 public sealed partial class DataTableViewModel(

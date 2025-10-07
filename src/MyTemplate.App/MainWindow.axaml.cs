@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using HotAvalonia;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public partial class MainWindow : Window
 {

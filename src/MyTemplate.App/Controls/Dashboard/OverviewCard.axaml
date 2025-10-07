@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:dashboard="clr-namespace:MyTemplate.Demo.Controls.Dashboard">
+    xmlns:dashboard="clr-namespace:MyTemplate.App.Controls.Dashboard">
     <Design.PreviewWith>
         <Border Width="768">
             <UniformGrid Columns="4">

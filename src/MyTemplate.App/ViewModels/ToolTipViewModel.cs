@@ -4,7 +4,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("tooltip")]
 public sealed partial class ToolTipViewModel : ViewModelBase, INavigable

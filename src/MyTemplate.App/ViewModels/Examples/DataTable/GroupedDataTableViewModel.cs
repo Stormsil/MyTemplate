@@ -4,7 +4,7 @@ using System.IO;
 using Avalonia.Collections;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace MyTemplate.Demo.ViewModels.Examples.DataTable;
+namespace MyTemplate.App.ViewModels.Examples.DataTable;
 
 public sealed partial class GroupedDataTableViewModel : ViewModelBase
 {

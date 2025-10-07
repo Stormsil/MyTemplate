@@ -2,7 +2,7 @@
 using Avalonia.Media;
 using Avalonia.Media.Immutable;
 
-namespace MyTemplate.Demo.Converters;
+namespace MyTemplate.App.Converters;
 
 public static class BrushConverters
 {

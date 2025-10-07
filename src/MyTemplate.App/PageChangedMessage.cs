@@ -1,6 +1,6 @@
 using System;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public sealed class PageChangedMessage
 {

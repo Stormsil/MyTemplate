@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace MyTemplate.Demo.Views.Examples.Typography;
+namespace MyTemplate.App.Views.Examples.Typography;
 
 public partial class LabelContent : UserControl
 {

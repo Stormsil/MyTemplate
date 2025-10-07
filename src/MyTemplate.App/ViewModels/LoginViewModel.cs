@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.Validators;
+using MyTemplate.App.Validators;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 public sealed partial class LoginViewModel(DialogManager dialogManager) : ViewModelBase
 {

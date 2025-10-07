@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace MyTemplate.Demo.Validators;
+namespace MyTemplate.App.Validators;
 
 public sealed class EmailValidationAttribute() : ValidationAttribute(DefaultErrorMessage)
 {

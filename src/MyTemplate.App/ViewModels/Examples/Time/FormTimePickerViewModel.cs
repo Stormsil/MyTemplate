@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.Validators;
+using MyTemplate.App.Validators;
 
-namespace MyTemplate.Demo.ViewModels.Examples.Time;
+namespace MyTemplate.App.ViewModels.Examples.Time;
 
 public sealed partial class FormTimePickerViewModel : ViewModelBase
 {

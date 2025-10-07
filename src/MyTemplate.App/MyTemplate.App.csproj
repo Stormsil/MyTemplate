@@ -5,10 +5,10 @@
         <Nullable>enable</Nullable>
         <Version>1.1.1</Version>
         <AssemblyName>shadui-app</AssemblyName>
-        <AssemblyTitle>MyTemplate App</AssemblyTitle>
-        <Product>MyTemplate App</Product>
+        <AssemblyTitle>MyTemplate.UI App</AssemblyTitle>
+        <Product>MyTemplate.UI App</Product>
         <Company>AccounTech Business Management Services</Company>
-        <Copyright>Copyright © MyTemplate App 2025</Copyright>
+        <Copyright>Copyright © MyTemplate.UI App 2025</Copyright>
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
@@ -42,7 +42,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\MyTemplate\MyTemplate.csproj" />
+        <ProjectReference Include="..\MyTemplate.UI\MyTemplate.UI.csproj" />
     </ItemGroup>
 
     <Target Name="GenerateXamlTextCopies" BeforeTargets="PrepareForRun">

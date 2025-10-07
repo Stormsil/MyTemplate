@@ -2,7 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace MyTemplate.Demo.Views.Examples.Numeric;
+namespace MyTemplate.App.Views.Examples.Numeric;
 
 public partial class FormNumericContent : UserControl
 {

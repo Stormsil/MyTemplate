@@ -2,7 +2,7 @@
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace MyTemplate.Demo.ViewModels.Examples.Typography;
+namespace MyTemplate.App.ViewModels.Examples.Typography;
 
 public sealed partial class TextBlockViewModel : ViewModelBase
 {

@@ -2,9 +2,9 @@
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.Date;
+using MyTemplate.App.ViewModels.Examples.Date;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("date")]
 public sealed partial class DateViewModel : ViewModelBase, INavigable

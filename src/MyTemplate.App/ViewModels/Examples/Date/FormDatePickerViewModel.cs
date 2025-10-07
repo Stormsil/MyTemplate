@@ -4,7 +4,7 @@ using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace MyTemplate.Demo.ViewModels.Examples.Date;
+namespace MyTemplate.App.ViewModels.Examples.Date;
 
 public sealed partial class FormDatePickerViewModel : ViewModelBase
 {

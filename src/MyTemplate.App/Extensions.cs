@@ -1,7 +1,7 @@
-﻿using MyTemplate.Demo.ViewModels;
-using MyTemplate.Demo.Views;
+﻿using MyTemplate.App.ViewModels;
+using MyTemplate.App.Views;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public static class Extensions
 {

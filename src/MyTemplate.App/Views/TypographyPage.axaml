@@ -1,11 +1,11 @@
 ﻿<UserControl
-    x:Class="MyTemplate.Demo.Views.TypographyPage"
+    x:Class="MyTemplate.App.Views.TypographyPage"
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:shadui="clr-namespace:MyTemplate;assembly=MyTemplate"
-    xmlns:viewModels="clr-namespace:MyTemplate.Demo.ViewModels"
+    xmlns:shadui="clr-namespace:MyTemplate.UI;assembly=MyTemplate.UI"
+    xmlns:viewModels="clr-namespace:MyTemplate.App.ViewModels"
     d:DesignWidth="800"
     x:DataType="viewModels:TypographyViewModel"
     mc:Ignorable="d">

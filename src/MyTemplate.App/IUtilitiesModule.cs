@@ -1,6 +1,6 @@
 ﻿using Jab;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 [ServiceProviderModule]
 [Singleton<DialogManager>]

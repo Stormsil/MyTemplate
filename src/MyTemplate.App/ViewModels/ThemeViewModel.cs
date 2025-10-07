@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("theme")]
 public sealed partial class ThemeViewModel(PageManager pageManager) : ViewModelBase, INavigable

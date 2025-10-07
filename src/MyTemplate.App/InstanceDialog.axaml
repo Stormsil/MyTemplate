@@ -1,11 +1,11 @@
 ﻿<shadui:Window
-    x:Class="MyTemplate.Demo.InstanceDialog"
+    x:Class="MyTemplate.App.InstanceDialog"
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:shadui="clr-namespace:MyTemplate;assembly=MyTemplate"
-    Title="MyTemplate App"
+    xmlns:shadui="clr-namespace:MyTemplate.UI;assembly=MyTemplate.UI"
+    Title="MyTemplate.UI App"
     Width="400"
     Height="224"
     CanMaximize="False"
@@ -25,7 +25,7 @@
         <TextBlock Classes="Large" Text="Stop" />
         <TextBlock
             Classes="Small"
-            Text="An instance of MyTemplate app is already running on this computer. You can only run one instance at a time."
+            Text="An instance of MyTemplate.UI app is already running on this computer. You can only run one instance at a time."
             TextWrapping="Wrap" />
         <Button
             Margin="0,24"

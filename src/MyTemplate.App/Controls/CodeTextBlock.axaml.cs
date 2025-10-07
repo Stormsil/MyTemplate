@@ -12,7 +12,7 @@ using AvaloniaEdit;
 using AvaloniaEdit.TextMate;
 using TextMateSharp.Grammars;
 
-namespace MyTemplate.Demo.Controls;
+namespace MyTemplate.App.Controls;
 
 public class CodeTextBlock : TemplatedControl
 {

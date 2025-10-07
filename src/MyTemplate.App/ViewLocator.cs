@@ -3,9 +3,9 @@ using System.Collections.Concurrent;
 using System.Reflection;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using MyTemplate.Demo.ViewModels;
+using MyTemplate.App.ViewModels;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public class ViewLocator : IDataTemplate
 {

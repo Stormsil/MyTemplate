@@ -5,7 +5,7 @@ using System.IO;
 using Avalonia.Controls.Selection;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace MyTemplate.Demo.ViewModels.Examples.ListBox;
+namespace MyTemplate.App.ViewModels.Examples.ListBox;
 
 public sealed partial class ListBoxViewModel : ViewModelBase
 {

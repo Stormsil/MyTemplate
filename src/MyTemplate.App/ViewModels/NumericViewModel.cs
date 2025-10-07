@@ -2,9 +2,9 @@
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.Numeric;
+using MyTemplate.App.ViewModels.Examples.Numeric;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("numeric")]
 public sealed partial class NumericViewModel : ViewModelBase, INavigable

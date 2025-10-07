@@ -4,9 +4,9 @@ using System.Timers;
 using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.Input;
+using MyTemplate.App.ViewModels.Examples.Input;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("input")]
 public sealed partial class InputViewModel : ViewModelBase, INavigable

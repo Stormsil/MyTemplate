@@ -2,7 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace MyTemplate.Demo.Views.Examples.Time;
+namespace MyTemplate.App.Views.Examples.Time;
 
 public partial class FormTimePickerContent : UserControl
 {

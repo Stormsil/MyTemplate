@@ -11,7 +11,7 @@ using AvaloniaEdit.Utils;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace MyTemplate.Demo.ViewModels.Examples.DataTable;
+namespace MyTemplate.App.ViewModels.Examples.DataTable;
 
 public sealed partial class BasicDataTableViewModel : ViewModelBase
 {

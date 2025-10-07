@@ -2,7 +2,7 @@
 using Avalonia;
 using Serilog;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 internal sealed class Program
 {

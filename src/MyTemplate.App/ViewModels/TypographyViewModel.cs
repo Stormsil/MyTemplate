@@ -1,9 +1,9 @@
 using System.ComponentModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.Typography;
+using MyTemplate.App.ViewModels.Examples.Typography;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("typography")]
 public sealed partial class TypographyViewModel : ViewModelBase, INavigable

@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public static class CodeSnippetHelper
 {

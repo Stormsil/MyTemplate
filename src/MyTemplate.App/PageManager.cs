@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public sealed class PageManager(ServiceProvider serviceProvider)
 {

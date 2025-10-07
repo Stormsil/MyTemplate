@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Controls.Primitives;
 
-namespace MyTemplate.Demo.Controls;
+namespace MyTemplate.App.Controls;
 
 public class ThemeCornerRadius : TemplatedControl
 {

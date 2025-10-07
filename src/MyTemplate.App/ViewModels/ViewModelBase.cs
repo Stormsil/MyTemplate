@@ -7,7 +7,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 public abstract class ViewModelBase : ObservableObject, INotifyDataErrorInfo
 {

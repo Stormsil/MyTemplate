@@ -2,9 +2,9 @@
 using Avalonia.Interactivity;
 using Avalonia.Threading;
 using LiveChartsCore.Kernel;
-using MyTemplate.Demo.ViewModels;
+using MyTemplate.App.ViewModels;
 
-namespace MyTemplate.Demo.Views;
+namespace MyTemplate.App.Views;
 
 public partial class DashboardPage : UserControl
 {

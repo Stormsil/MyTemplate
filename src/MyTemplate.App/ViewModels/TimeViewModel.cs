@@ -2,9 +2,9 @@
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.Time;
+using MyTemplate.App.ViewModels.Examples.Time;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("time")]
 public sealed partial class TimeViewModel : ViewModelBase, INavigable

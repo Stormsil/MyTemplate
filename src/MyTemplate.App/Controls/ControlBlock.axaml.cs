@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 
-namespace MyTemplate.Demo.Controls;
+namespace MyTemplate.App.Controls;
 
 public class ControlBlock : ContentControl
 {

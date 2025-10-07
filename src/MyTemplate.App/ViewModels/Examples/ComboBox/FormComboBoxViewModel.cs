@@ -4,7 +4,7 @@ using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace MyTemplate.Demo.ViewModels.Examples.ComboBox;
+namespace MyTemplate.App.ViewModels.Examples.ComboBox;
 
 public sealed partial class FormComboBoxViewModel : ViewModelBase
 {

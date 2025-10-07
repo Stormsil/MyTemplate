@@ -3,7 +3,7 @@ using System.Globalization;
 using Avalonia.Data.Converters;
 using Avalonia.Media;
 
-namespace MyTemplate.Demo.Converters;
+namespace MyTemplate.App.Converters;
 
 public class StringToColor : IValueConverter
 {

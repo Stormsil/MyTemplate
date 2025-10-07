@@ -3,7 +3,7 @@ using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public static class TrayMenuHelper
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MyTemplate.Demo.Validators;
+namespace MyTemplate.App.Validators;
 
 public sealed class IsMatchWithAttribute(string matchProperty, string errorMessage = "Not match")
     : ValidationAttribute(errorMessage)

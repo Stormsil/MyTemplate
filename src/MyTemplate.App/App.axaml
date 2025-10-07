@@ -1,16 +1,16 @@
 ﻿<Application
-    x:Class="MyTemplate.Demo.App"
+    x:Class="MyTemplate.App.App"
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:demo="clr-namespace:MyTemplate.Demo"
-    xmlns:shadui="clr-namespace:MyTemplate;assembly=MyTemplate"
+    xmlns:demo="clr-namespace:MyTemplate.App"
+    xmlns:shadui="clr-namespace:MyTemplate.UI;assembly=MyTemplate.UI"
     RequestedThemeVariant="Default">
     <Application.DataTemplates>
         <demo:ViewLocator />
     </Application.DataTemplates>
     <TrayIcon.Icons>
         <TrayIcons>
-            <TrayIcon Icon="/Assets/favicon.ico" ToolTipText="MyTemplate App">
+            <TrayIcon Icon="/Assets/favicon.ico" ToolTipText="MyTemplate.UI App">
                 <TrayIcon.Menu>
                     <NativeMenu>
                         <!--  added spaces to have a wider menu  -->

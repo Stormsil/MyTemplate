@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Controls.Primitives;
 
-namespace MyTemplate.Demo.Controls.Dashboard;
+namespace MyTemplate.App.Controls.Dashboard;
 
 public class OverviewCard : TemplatedControl
 {

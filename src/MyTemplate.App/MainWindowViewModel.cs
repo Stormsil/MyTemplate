@@ -4,9 +4,9 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels;
+using MyTemplate.App.ViewModels;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public sealed partial class MainWindowViewModel : ViewModelBase
 {

@@ -4,17 +4,17 @@ using Avalonia;
 using CommunityToolkit.Mvvm.Messaging;
 using Jab;
 using Serilog;
-using MyTemplate.Demo.ViewModels;
-using MyTemplate.Demo.ViewModels.Examples.ComboBox;
-using MyTemplate.Demo.ViewModels.Examples.DataTable;
-using MyTemplate.Demo.ViewModels.Examples.Date;
-using MyTemplate.Demo.ViewModels.Examples.Input;
-using MyTemplate.Demo.ViewModels.Examples.ListBox;
-using MyTemplate.Demo.ViewModels.Examples.Numeric;
-using MyTemplate.Demo.ViewModels.Examples.Time;
-using MyTemplate.Demo.ViewModels.Examples.Typography;
+using MyTemplate.App.ViewModels;
+using MyTemplate.App.ViewModels.Examples.ComboBox;
+using MyTemplate.App.ViewModels.Examples.DataTable;
+using MyTemplate.App.ViewModels.Examples.Date;
+using MyTemplate.App.ViewModels.Examples.Input;
+using MyTemplate.App.ViewModels.Examples.ListBox;
+using MyTemplate.App.ViewModels.Examples.Numeric;
+using MyTemplate.App.ViewModels.Examples.Time;
+using MyTemplate.App.ViewModels.Examples.Typography;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 [ServiceProvider]
 [Transient<AboutViewModel>]
@@ -68,7 +68,7 @@ public partial class ServiceProvider
     public ILogger LoggerFactory()
     {
         var currentFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "MyTemplate\\logs");
+            "MyTemplate.UI\\logs");
 
         Directory.CreateDirectory(currentFolder); //ensure the directory exists
 

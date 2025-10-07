@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using Avalonia.Data.Converters;
 
-namespace MyTemplate.Demo.Converters;
+namespace MyTemplate.App.Converters;
 
 public class TimeOnlyToTimeSpanConverter : IValueConverter
 {

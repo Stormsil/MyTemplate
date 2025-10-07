@@ -2,7 +2,7 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 public sealed partial class AboutViewModel(DialogManager dialogManager) : ViewModelBase
 {

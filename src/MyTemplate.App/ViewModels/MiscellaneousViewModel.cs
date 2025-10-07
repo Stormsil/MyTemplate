@@ -3,9 +3,9 @@ using System.IO;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using MyTemplate.Demo.ViewModels.Examples.ListBox;
+using MyTemplate.App.ViewModels.Examples.ListBox;
 
-namespace MyTemplate.Demo.ViewModels;
+namespace MyTemplate.App.ViewModels;
 
 [Page("miscellaneous")]
 public sealed partial class MiscellaneousViewModel : ViewModelBase, INavigable

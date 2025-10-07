@@ -1,6 +1,6 @@
 ﻿using Avalonia.Interactivity;
 
-namespace MyTemplate.Demo;
+namespace MyTemplate.App;
 
 public partial class InstanceDialog : Window
 {

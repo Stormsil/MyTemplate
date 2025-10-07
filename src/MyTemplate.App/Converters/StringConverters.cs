@@ -1,7 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Data.Converters;
 
-namespace MyTemplate.Demo.Converters;
+namespace MyTemplate.App.Converters;
 
 public static class StringConverters
 {
