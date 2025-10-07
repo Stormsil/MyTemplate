@@ -1,0 +1,102 @@
+<UserControl
+    x:Class="MyTemplate.Demo.Views.BadgePage"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:MyTemplate.Demo.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shadui="clr-namespace:MyTemplate;assembly=MyTemplate"
+    xmlns:viewModels="clr-namespace:MyTemplate.Demo.ViewModels"
+    d:DesignWidth="800"
+    x:DataType="viewModels:BadgeViewModel"
+    mc:Ignorable="d">
+    <DockPanel LastChildFill="True">
+        <StackPanel
+            MaxWidth="{StaticResource PageMaxWidth}"
+            Margin="{StaticResource PageMargin}"
+            DockPanel.Dock="Top"
+            Spacing="4">
+            <Grid ColumnDefinitions="* Auto">
+                <TextBlock Classes="h2" Text="Badge" />
+                <StackPanel
+                    Grid.Column="1"
+                    Orientation="Horizontal"
+                    Spacing="8">
+                    <Button
+                        Width="28"
+                        Height="28"
+                        Background="{DynamicResource GhostHoverColor}"
+                        Classes="Icon"
+                        Command="{Binding BackPageCommand}">
+                        <Viewbox Margin="6">
+                            <TextBlock Classes="LucideIcon" Text="&#57420;" />
+                        </Viewbox>
+                    </Button>
+                    <Button
+                        Width="28"
+                        Height="28"
+                        Background="{DynamicResource GhostHoverColor}"
+                        Classes="Icon"
+                        Command="{Binding NextPageCommand}">
+                        <Viewbox Margin="6">
+                            <TextBlock Classes="LucideIcon" Text="&#57421;" />
+                        </Viewbox>
+                    </Button>
+                </StackPanel>
+            </Grid>
+            <TextBlock
+                Classes="p"
+                Text="Displays a badge component for status indicators, counts, or labels"
+                TextWrapping="Wrap" />
+        </StackPanel>
+        <ScrollViewer>
+            <StackPanel
+                MaxWidth="{StaticResource PageMaxWidth}"
+                Margin="{StaticResource PageMargin}"
+                Spacing="32">
+                <controls:ControlBlock Title="Badge" Xaml="{Binding BadgeDemoCode}">
+                    <StackPanel HorizontalAlignment="Center" Spacing="16">
+                        <!--  Basic Variants  -->
+                        <StackPanel
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal"
+                            Spacing="8">
+                            <shadui:Badge Content="Badge" />
+                            <shadui:Badge Classes="Secondary" Content="Secondary" />
+                            <shadui:Badge Classes="Destructive" Content="Destructive" />
+                            <shadui:Badge Classes="Outline" Content="Outline" />
+                        </StackPanel>
+
+                        <!--  Advanced Examples  -->
+                        <StackPanel
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal"
+                            Spacing="8">
+
+                            <!--  Verified Badge with Icon  -->
+                            <shadui:Badge Background="{DynamicResource InfoColor}" Foreground="White">
+                                <StackPanel Orientation="Horizontal" Spacing="4">
+                                    <TextBlock
+                                        Height="13"
+                                        VerticalAlignment="Center"
+                                        Classes="LucideIcon"
+                                        FontSize="12"
+                                        Text="&#57894;" />
+                                    <TextBlock VerticalAlignment="Center" Text="Verified" />
+                                </StackPanel>
+                            </shadui:Badge>
+
+                            <!--  Circular Number Badges  -->
+                            <shadui:Badge
+                                Padding="8,2"
+                                Classes="rounded-full"
+                                Content="8" />
+                            <shadui:Badge Classes="Destructive rounded-full" Content="99" />
+                            <shadui:Badge Classes="Outline rounded-full" Content="20+" />
+                        </StackPanel>
+                    </StackPanel>
+                </controls:ControlBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>
