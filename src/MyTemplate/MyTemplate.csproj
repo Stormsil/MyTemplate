@@ -10,18 +10,6 @@
         <Platforms>AnyCPU;x64</Platforms>
     </PropertyGroup>
 
-    <PropertyGroup>
-        <IsPackable>true</IsPackable>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageDescription>Avalonia-based Desktop UI Library inspired by shadcn and Suki UI Library</PackageDescription>
-        <PackageTags>avalonia;avaloniaui;ui;theme;shadui</PackageTags>
-        <PackageProjectUrl>https://github.com/accntech/shad-ui.git</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/accntech/shad-ui.git</RepositoryUrl>
-        <PackageIcon>icon.png</PackageIcon>
-        <Authors>accntech</Authors>
-    </PropertyGroup>
-
     <ItemGroup>
         <PackageReference Include="Avalonia" Version="11.3.3" />
         <PackageReference Include="Avalonia.Controls.ColorPicker" Version="11.3.3" />
@@ -36,8 +24,5 @@
     <PropertyGroup>
         <MinVerDefaultPreReleaseIdentifiers>preview</MinVerDefaultPreReleaseIdentifiers>
     </PropertyGroup>
-
-    <ItemGroup>
-    </ItemGroup>
 
 </Project>
