@@ -23,6 +23,9 @@
 
     <PropertyGroup>
         <MinVerDefaultPreReleaseIdentifiers>preview</MinVerDefaultPreReleaseIdentifiers>
+        <RootNamespace>MyTemplate.UI</RootNamespace>
+        <AssemblyName>MyTemplate.UI</AssemblyName>
+        <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
 </Project>

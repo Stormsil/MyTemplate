@@ -1,5 +1,6 @@
 ﻿using MyTemplate.App.ViewModels;
 using MyTemplate.App.Views;
+using MyTemplate.UI;
 
 namespace MyTemplate.App;
 

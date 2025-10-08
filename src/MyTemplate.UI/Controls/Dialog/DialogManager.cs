@@ -12,6 +12,10 @@ namespace MyTemplate.UI;
 /// </summary>
 public sealed class DialogManager
 {
+    public DialogManager()
+    {
+    }
+
     internal event EventHandler<DialogShownEventArgs>? OnDialogShown;
     internal event EventHandler<DialogClosedEventArgs>? OnDialogClosed;
 

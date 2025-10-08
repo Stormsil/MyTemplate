@@ -3,6 +3,7 @@ using Avalonia.Interactivity;
 using Avalonia.Threading;
 using LiveChartsCore.Kernel;
 using MyTemplate.App.ViewModels;
+using MyTemplate.UI;
 
 namespace MyTemplate.App.Views;
 

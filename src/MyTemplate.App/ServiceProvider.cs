@@ -13,10 +13,17 @@ using MyTemplate.App.ViewModels.Examples.ListBox;
 using MyTemplate.App.ViewModels.Examples.Numeric;
 using MyTemplate.App.ViewModels.Examples.Time;
 using MyTemplate.App.ViewModels.Examples.Typography;
+using MyTemplate.UI;
 
 namespace MyTemplate.App;
 
 [ServiceProvider]
+[Singleton(typeof(MyTemplate.UI.DialogManager))]
+[Singleton(typeof(MyTemplate.UI.ToastManager))]
+[Singleton(typeof(MyTemplate.UI.ThemeWatcher), Factory = nameof(ThemeWatcherFactory))]
+[Singleton<IMessenger, WeakReferenceMessenger>]
+[Singleton(typeof(ILogger), Factory = nameof(LoggerFactory))]
+[Singleton(typeof(PageManager), Factory = nameof(PageManagerFactory))]
 [Transient<AboutViewModel>]
 [Transient<AvatarViewModel>]
 [Transient<BadgeViewModel>]
@@ -58,11 +65,6 @@ namespace MyTemplate.App;
 [Transient<SelectableTextBlockViewModel>]
 [Transient<LabelViewModel>]
 [Transient<MainWindowViewModel>]
-[Import<IUtilitiesModule>]
-[Singleton<IMessenger, WeakReferenceMessenger>]
-[Singleton(typeof(ThemeWatcher), Factory = nameof(ThemeWatcherFactory))]
-[Singleton(typeof(ILogger), Factory = nameof(LoggerFactory))]
-[Singleton(typeof(PageManager), Factory = nameof(PageManagerFactory))]
 public partial class ServiceProvider
 {
     public ILogger LoggerFactory()

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MyTemplate.UI;
 
 namespace MyTemplate.App.ViewModels.Examples.Numeric;
 

@@ -7,6 +7,7 @@ using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
 using SkiaSharp;
+using MyTemplate.UI;
 
 namespace MyTemplate.App.ViewModels;
 
@@ -31,7 +32,7 @@ public sealed partial class DashboardViewModel : ViewModelBase, INavigable
             UpdateSeriesFill(colors.PrimaryColor);
         };
 
-        var fontUri = new Uri("avares://shadui-app/Assets/Fonts/Manrope-Regular.ttf");
+        var fontUri = new Uri("avares://MyTemplate.App/Assets/Fonts/Manrope-Regular.ttf");
         var fontAsset = AssetLoader.Open(fontUri);
 
         using var skData = SKData.Create(fontAsset);

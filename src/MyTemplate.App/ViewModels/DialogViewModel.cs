@@ -2,6 +2,7 @@
 using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MyTemplate.UI;
 
 namespace MyTemplate.App.ViewModels;
 

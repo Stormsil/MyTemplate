@@ -1,10 +1,11 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using HotAvalonia;
+using MyTemplate.UI;
 
 namespace MyTemplate.App;
 
-public partial class MainWindow : Window
+public partial class MainWindow : MyTemplate.UI.Window
 {
     public MainWindow()
     {

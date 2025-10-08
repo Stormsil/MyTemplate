@@ -11,6 +11,7 @@ using Avalonia.Threading;
 using AvaloniaEdit;
 using AvaloniaEdit.TextMate;
 using TextMateSharp.Grammars;
+using MyTemplate.UI;
 
 namespace MyTemplate.App.Controls;
 
@@ -144,7 +145,7 @@ public class CodeTextBlock : TemplatedControl
     {
         if (Application.Current?.ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop) return;
 
-        var window = desktop.MainWindow as Window;
+        var window = desktop.MainWindow as Avalonia.Controls.Window;
         var viewModel = window?.DataContext as MainWindowViewModel;
 
         viewModel?.ToastManager

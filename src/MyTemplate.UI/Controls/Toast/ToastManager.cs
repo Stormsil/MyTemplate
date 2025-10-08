@@ -10,6 +10,10 @@ namespace MyTemplate.UI;
 /// </summary>
 public sealed class ToastManager
 {
+    public ToastManager()
+    {
+    }
+
     internal event EventHandler<Toast>? OnToastQueued;
     internal event EventHandler<Toast>? OnToastDismissed;
     internal event EventHandler? OnAllToastsDismissed;

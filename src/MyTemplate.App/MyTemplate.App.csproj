@@ -4,7 +4,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <Version>1.1.1</Version>
-        <AssemblyName>shadui-app</AssemblyName>
+        <AssemblyName>MyTemplate.App</AssemblyName>
         <AssemblyTitle>MyTemplate.UI App</AssemblyTitle>
         <Product>MyTemplate.UI App</Product>
         <Company>AccounTech Business Management Services</Company>

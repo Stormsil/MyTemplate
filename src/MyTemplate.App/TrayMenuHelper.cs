@@ -2,6 +2,7 @@
 using System.Linq;
 using Avalonia;
 using Avalonia.Controls;
+using MyTemplate.UI;
 
 namespace MyTemplate.App;
 

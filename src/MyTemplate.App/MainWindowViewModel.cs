@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using MyTemplate.App.ViewModels;
+using MyTemplate.UI;
 
 namespace MyTemplate.App;
 
