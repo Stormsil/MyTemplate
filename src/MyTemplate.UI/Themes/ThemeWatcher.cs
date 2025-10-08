@@ -154,6 +154,14 @@ public class ThemeWatcher
         {
             ThemeMode.Dark => ThemeVariant.Dark,
             ThemeMode.Light => ThemeVariant.Light,
+            ThemeMode.GreenLight => ThemeVariants.GreenLight,
+            ThemeMode.GreenDark => ThemeVariants.GreenDark,
+            ThemeMode.YellowLight => ThemeVariants.YellowLight,
+            ThemeMode.YellowDark => ThemeVariants.YellowDark,
+            ThemeMode.OrangeLight => ThemeVariants.OrangeLight,
+            ThemeMode.OrangeDark => ThemeVariants.OrangeDark,
+            ThemeMode.VioletLight => ThemeVariants.VioletLight,
+            ThemeMode.VioletDark => ThemeVariants.VioletDark,
             _ => ThemeVariant.Default
         };
 

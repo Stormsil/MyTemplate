@@ -13,7 +13,11 @@
       "Bash(echo \"$file needs fixing\")",
       "Bash(while read f)",
       "Bash(do grep -q \"using MyTemplate.UI\" \"$f\")",
-      "Bash(dotnet run:*)"
+      "Bash(dotnet run:*)",
+      "Bash(taskkill:*)",
+      "Bash(Get-Process MyTemplate.App -ErrorAction SilentlyContinue)",
+      "Bash(Stop-Process -Force)",
+      "Bash(ren:*)"
     ],
     "deny": [],
     "ask": []

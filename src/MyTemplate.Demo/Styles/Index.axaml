@@ -1,0 +1,6 @@
+﻿<Styles xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <StyleInclude Source="avares://MyTemplate.Demo/Styles/Menu.axaml" />
+    <StyleInclude Source="avares://MyTemplate.Demo/Styles/TextBlock.axaml" />
+    <StyleInclude Source="avares://MyTemplate.Demo/Styles/Tooltip.axaml" />
+    <StyleInclude Source="avares://MyTemplate.Demo/Styles/Window.axaml" />
+</Styles>

@@ -1,7 +1,8 @@
 ﻿<Styles
     x:Class="MyTemplate.UI.ShadTheme"
     xmlns="https://github.com/avaloniaui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="clr-namespace:MyTemplate.UI">
     <Styles.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -11,6 +12,14 @@
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceInclude x:Key="Light" Source="/Themes/Light.axaml" />
                 <ResourceInclude x:Key="Dark" Source="/Themes/Dark.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.GreenLight}" Source="/Themes/GreenLight.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.GreenDark}" Source="/Themes/GreenDark.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.YellowLight}" Source="/Themes/YellowLight.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.YellowDark}" Source="/Themes/YellowDark.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.OrangeLight}" Source="/Themes/OrangeLight.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.OrangeDark}" Source="/Themes/OrangeDark.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.VioletLight}" Source="/Themes/VioletLight.axaml" />
+                <ResourceInclude x:Key="{x:Static ui:ThemeVariants.VioletDark}" Source="/Themes/VioletDark.axaml" />
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
     </Styles.Resources>

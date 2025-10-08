@@ -12,6 +12,7 @@ namespace MyTemplate.App;
 public sealed partial class MainWindowViewModel : ViewModelBase
 {
     private readonly ThemeWatcher _themeWatcher;
+    private readonly ThemeSettings _themeSettings;
     private readonly AboutViewModel _aboutViewModel;
     private readonly DashboardViewModel _dashboardViewModel;
     private readonly ThemeViewModel _themeViewModel;
@@ -38,12 +39,14 @@ public sealed partial class MainWindowViewModel : ViewModelBase
     private readonly ToggleViewModel _toggleViewModel;
     private readonly ToolTipViewModel _toolTipViewModel;
     private readonly MiscellaneousViewModel _miscellaneousViewModel;
+    private readonly RichTextAreaViewModel _richTextAreaViewModel;
 
     public MainWindowViewModel(
         PageManager pageManager,
         DialogManager dialogManager,
         ToastManager toastManager,
         ThemeWatcher themeWatcher,
+        ThemeSettings themeSettings,
         AboutViewModel aboutViewModel,
         DashboardViewModel dashboardViewModel,
         ThemeViewModel themeViewModel,
@@ -69,11 +72,13 @@ public sealed partial class MainWindowViewModel : ViewModelBase
         ToastViewModel toastViewModel,
         ToggleViewModel toggleViewModel,
         ToolTipViewModel toolTipViewModel,
-        MiscellaneousViewModel miscellaneousViewModel)
+        MiscellaneousViewModel miscellaneousViewModel,
+        RichTextAreaViewModel richTextAreaViewModel)
     {
         _dialogManager = dialogManager;
         _toastManager = toastManager;
         _themeWatcher = themeWatcher;
+        _themeSettings = themeSettings;
         _aboutViewModel = aboutViewModel;
         _dashboardViewModel = dashboardViewModel;
         _themeViewModel = themeViewModel;
@@ -100,6 +105,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase
         _toggleViewModel = toggleViewModel;
         _toolTipViewModel = toolTipViewModel;
         _miscellaneousViewModel = miscellaneousViewModel;
+        _richTextAreaViewModel = richTextAreaViewModel;
 
         pageManager.OnNavigate = SwitchPage;
     }
@@ -279,6 +285,12 @@ public sealed partial class MainWindowViewModel : ViewModelBase
     }
 
     [RelayCommand]
+    private void OpenRichTextArea()
+    {
+        SwitchPage(_richTextAreaViewModel);
+    }
+
+    [RelayCommand]
     private void OpenUrl(string url)
     {
         if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
@@ -298,6 +310,10 @@ public sealed partial class MainWindowViewModel : ViewModelBase
     public void Initialize()
     {
         SwitchPage(_dashboardViewModel);
+
+        // Load saved theme
+        CurrentTheme = _themeSettings.LoadTheme();
+        _themeWatcher.SwitchTheme(CurrentTheme);
     }
 
     [RelayCommand]
@@ -333,15 +349,10 @@ public sealed partial class MainWindowViewModel : ViewModelBase
     }
 
     [RelayCommand]
-    private void SwitchTheme()
+    private void SelectTheme(ThemeMode theme)
     {
-        CurrentTheme = CurrentTheme switch
-        {
-            ThemeMode.System => ThemeMode.Light,
-            ThemeMode.Light => ThemeMode.Dark,
-            _ => ThemeMode.System
-        };
-
+        CurrentTheme = theme;
         _themeWatcher.SwitchTheme(CurrentTheme);
+        _themeSettings.SaveTheme(CurrentTheme);
     }
 }

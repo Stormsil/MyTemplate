@@ -1,0 +1,138 @@
+<UserControl
+    x:Class="MyTemplate.Demo.Views.RichTextAreaPage"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:MyTemplate.Demo.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shadui="clr-namespace:MyTemplate.UI;assembly=MyTemplate.UI"
+    xmlns:vm="clr-namespace:MyTemplate.Demo.ViewModels"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    x:DataType="vm:RichTextAreaViewModel"
+    mc:Ignorable="d">
+    <DockPanel LastChildFill="True">
+        <StackPanel
+            MaxWidth="{StaticResource PageMaxWidth}"
+            Margin="{StaticResource PageMargin}"
+            DockPanel.Dock="Top"
+            Spacing="4">
+            <Grid ColumnDefinitions="* Auto">
+                <TextBlock Classes="h2" Text="Rich Text Area" />
+                <StackPanel
+                    Grid.Column="1"
+                    Orientation="Horizontal"
+                    Spacing="8">
+                    <Button
+                        Width="28"
+                        Height="28"
+                        Background="{DynamicResource GhostHoverColor}"
+                        Classes="Icon"
+                        Command="{Binding BackPageCommand}">
+                        <Viewbox Margin="6">
+                            <TextBlock Classes="LucideIcon" Text="&#57420;" />
+                        </Viewbox>
+                    </Button>
+                    <Button
+                        Width="28"
+                        Height="28"
+                        Background="{DynamicResource GhostHoverColor}"
+                        Classes="Icon"
+                        Command="{Binding NextPageCommand}">
+                        <Viewbox Margin="6">
+                            <TextBlock Classes="LucideIcon" Text="&#57421;" />
+                        </Viewbox>
+                    </Button>
+                </StackPanel>
+            </Grid>
+            <TextBlock
+                Classes="p"
+                Text="A console-style text area with built-in support for colored log output using theme colors."
+                TextWrapping="Wrap" />
+        </StackPanel>
+        <ScrollViewer>
+            <StackPanel
+                MaxWidth="{StaticResource PageMaxWidth}"
+                Margin="{StaticResource PageMargin}"
+                Spacing="32">
+
+                <!--  Default  -->
+                <controls:ControlBlock Title="Default" Xaml="{Binding DefaultCode}">
+                    <shadui:RichTextArea Height="150" />
+                </controls:ControlBlock>
+
+                <!--  Interactive Console  -->
+                <controls:ControlBlock Title="Interactive Console">
+                    <StackPanel Spacing="16">
+                        <shadui:RichTextArea Height="250" Logs="{Binding ConsoleLogs}" />
+                        <Grid ColumnDefinitions="*,Auto,Auto" RowDefinitions="Auto">
+                            <TextBox
+                                Grid.Column="0"
+                                Margin="0,0,8,0"
+                                shadui:ControlAssist.Label="Message"
+                                Text="{Binding InputText}"
+                                Watermark="Enter message..." />
+                            <Button
+                                Grid.Column="1"
+                                Margin="0,0,8,0"
+                                VerticalAlignment="Bottom"
+                                Command="{Binding DemoendTextCommand}"
+                                Content="Send" />
+                            <Button
+                                Grid.Column="2"
+                                VerticalAlignment="Bottom"
+                                Command="{Binding ClearConsoleCommand}"
+                                Content="Clear" />
+                        </Grid>
+                    </StackPanel>
+                </controls:ControlBlock>
+
+                <!--  Color Examples  -->
+                <controls:ControlBlock Title="Colored Logs" CSharp="{Binding ColoredLogsCode}">
+                    <StackPanel Spacing="16">
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <Button Command="{Binding AddInfoLogCommand}" Content="Info" />
+                            <Button Command="{Binding AddSuccessLogCommand}" Content="Success" />
+                            <Button Command="{Binding AddWarningLogCommand}" Content="Warning" />
+                            <Button Command="{Binding AddErrorLogCommand}" Content="Error" />
+                            <Button Command="{Binding AddColoredSequenceCommand}" Content="Sequence" />
+                        </StackPanel>
+                        <TextBlock Classes="p Muted" Text="Click buttons to see different log levels with themed colors" />
+                    </StackPanel>
+                </controls:ControlBlock>
+
+                <!--  Available Colors  -->
+                <StackPanel Spacing="16">
+                    <TextBlock Classes="h4" Text="Available Log Levels" />
+                    <Grid ColumnDefinitions="150,*" IsSharedSizeScope="True">
+                        <StackPanel Grid.Column="0" Spacing="8">
+                            <TextBlock Classes="Small Muted" Text="Log Level" />
+                            <Separator />
+                            <TextBlock Text="Default" />
+                            <TextBlock Text="Primary" />
+                            <TextBlock Text="Secondary" />
+                            <TextBlock Text="Success" />
+                            <TextBlock Text="Warning" />
+                            <TextBlock Text="Error" />
+                            <TextBlock Text="Info" />
+                            <TextBlock Text="Muted" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Spacing="8">
+                            <TextBlock Classes="Small Muted" Text="Color Preview" />
+                            <Separator />
+                            <TextBlock Foreground="{DynamicResource ForegroundColor}" Text="Foreground color for regular text" />
+                            <TextBlock Foreground="{DynamicResource PrimaryColor}" Text="Primary theme color" />
+                            <TextBlock Foreground="{DynamicResource SecondaryColor}" Text="Secondary theme color" />
+                            <TextBlock Foreground="{DynamicResource SuccessColor}" Text="Success notification color" />
+                            <TextBlock Foreground="{DynamicResource WarningColor}" Text="Warning notification color" />
+                            <TextBlock Foreground="{DynamicResource ErrorColor}" Text="Error notification color" />
+                            <TextBlock Foreground="{DynamicResource InfoColor}" Text="Info notification color" />
+                            <TextBlock Foreground="{DynamicResource MutedColor}" Text="Muted foreground color" />
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

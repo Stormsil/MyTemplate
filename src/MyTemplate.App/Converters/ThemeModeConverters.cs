@@ -11,7 +11,15 @@ public static class ThemeModeConverters
     {
         { ThemeMode.System, "\uE2B2" },
         { ThemeMode.Light, "\uE2B1" },
-        { ThemeMode.Dark, "\uE122" }
+        { ThemeMode.Dark, "\uE122" },
+        { ThemeMode.GreenLight, "\uE2B1" },
+        { ThemeMode.GreenDark, "\uE122" },
+        { ThemeMode.YellowLight, "\uE2B1" },
+        { ThemeMode.YellowDark, "\uE122" },
+        { ThemeMode.OrangeLight, "\uE2B1" },
+        { ThemeMode.OrangeDark, "\uE122" },
+        { ThemeMode.VioletLight, "\uE2B1" },
+        { ThemeMode.VioletDark, "\uE122" }
     };
 
     public static readonly IValueConverter ToLucideIcon =

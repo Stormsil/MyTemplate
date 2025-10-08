@@ -36,6 +36,7 @@
         <ResourceInclude Source="avares://MyTemplate.UI/Controls/Menu/MenuItem.axaml" />
         <ResourceInclude Source="avares://MyTemplate.UI/Controls/NumericUpDown/ButtonSpinner.axaml" />
         <ResourceInclude Source="avares://MyTemplate.UI/Controls/NumericUpDown/NumericUpDown.axaml" />
+        <ResourceInclude Source="avares://MyTemplate.UI/Controls/RichTextArea/RichTextArea.axaml" />
         <ResourceInclude Source="avares://MyTemplate.UI/Controls/SelectableTextBlock/SelectableTextBlock.axaml" />
         <ResourceInclude Source="avares://MyTemplate.UI/Controls/Sidebar/Sidebar.axaml" />
         <ResourceInclude Source="avares://MyTemplate.UI/Controls/Sidebar/SidebarItem.axaml" />
